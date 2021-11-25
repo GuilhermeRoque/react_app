@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f8a74d-1c35-41f2-86c0-4624f22c489a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardNota/CardNota.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CardNota/card-nota.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormularioCadastro/FormularioCadastro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FormularioCadastro/formulario-cadastro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ListaDeNotas/ListaDeNotas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ListaDeNotas/lista-de-notas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListaDeCategorias/ListaDeCategorias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ListaDeCategorias/lista-de-categorias.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardNota/CardNota.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardNota/CardNota.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormularioCadastro/FormularioCadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormularioCadastro/FormularioCadastro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListaDeNotas/ListaDeNotas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListaDeNotas/ListaDeNotas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
