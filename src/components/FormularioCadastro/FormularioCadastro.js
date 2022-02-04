@@ -10,10 +10,30 @@ export class FormularioCadastro extends Component{
     }
 
     render() {
+        const lista = this.props.categorias.map((categoria,index) => {
+            return (
+                <option key={index}>
+                    {categoria.nome}
+                </option>
+            )
+        });
         return(
             <form className={"form-cadastro"} onSubmit={event => this.handleSubmit(event)} onError={erros =>console.log(erros)}>
-                <input type={"text"} placeholder={"Título"} className={"form-cadastro_input"} onChange={event => this.handleMudancaTitulo(event)}/>
-                <textarea rows={15} placeholder={"Escreva sua nota"} className={"form-cadastro_input"} onChange={event => this.handleMudancaTexto(event)}/>
+                <select>
+                    {lista}
+                </select>
+                <input 
+                    type={"text"} 
+                    placeholder={"Título"} 
+                    className={"form-cadastro_input"} 
+                    onChange={event => this.handleMudancaTitulo(event)}
+                />
+                <textarea 
+                    rows={15} 
+                    placeholder={"Escreva sua nota"} 
+                    className={"form-cadastro_input"} 
+                    onChange={event => this.handleMudancaTexto(event)}
+                />
                 <Button type="submit" variant="contained" color="success" className={"form-cadastro_submit"}>Criar Nota</Button>
                 {/*<button className={"form-cadastro_submit"}>Criar Nota</button>*/}
             </form>

@@ -3,15 +3,16 @@ import {FormularioCadastro} from "./components/FormularioCadastro/FormularioCada
 import {Component} from "react";
 import "./assets/App.css";
 import './assets/index.css';
-// import {ListaDeCategorias} from "./components/ListaDeCategorias/ListaDeCategorias";
-import Stack from '@mui/material/Stack';
+import {ListaDeCategorias} from "./components/ListaDeCategorias/ListaDeCategorias";
+import Login from "./components/Login/Login"
 
 class App extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            notas:[]
+            notas:[],
+            categorias:[]
         }
     }
 
@@ -19,7 +20,18 @@ class App extends Component {
         const novaNota = {titulo,texto}
         const novoArrayDeNotas = [...this.state.notas,novaNota]
         const novoEstado = {
-            notas: novoArrayDeNotas
+            notas: novoArrayDeNotas,
+            categorias: this.state.categorias
+        }
+        this.setState(novoEstado)
+    }
+
+    criarCategoria(nome){
+        const novaCategoria = {nome}
+        const novoArrayDeCategorias = [...this.state.categorias, novaCategoria]
+        const novoEstado = {
+            notas: this.state.notas,
+            categorias: novoArrayDeCategorias
         }
         this.setState(novoEstado)
     }
@@ -30,27 +42,25 @@ class App extends Component {
         this.setState(this.state.notas)
     }
 
-    render() {
-        const categorias = [
-            {nome:"Categoria1"},
-            {nome:"Categoria2"},
-        ]
+    render() {   
         return (
-            <section className="conteudo">
-                <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
-                <main className={"conteudo-principal"}>
-                    <Stack direction="row" spacing={2}>
-                        <Item>Item 1</Item>
-                        <Item>Item 2</Item>
-                        <Item>Item 3</Item>
-                    </Stack>
-                    {/*<ListaDeCategorias categorias={categorias}/>*/}
-                    <ListaDeNotas
-                        notas={this.state.notas}
-                        apagarNota={this.apagarNota.bind(this)}
-                    />
-                </main>
-            </section>
+            <Login></Login>
+            // <section className="conteudo">
+            //     <FormularioCadastro 
+            //     categorias={this.state.categorias}
+            //     criarNota={this.criarNota.bind(this)}
+            //     />
+
+            //     <main className={"conteudo-principal"}>
+            //         <ListaDeCategorias 
+            //             categorias={this.state.categorias}
+            //             criarCategoria={this.criarCategoria.bind(this)}/>
+            //         <ListaDeNotas
+            //             notas={this.state.notas}
+            //             apagarNota={this.apagarNota.bind(this)}
+            //         />
+            //     </main>
+            // </section>
         );
     }
 }
